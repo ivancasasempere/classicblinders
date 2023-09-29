@@ -181,7 +181,6 @@ dependencies:
     - dbfreeshipping
     - dbbrandslider
     - dbproductcomments
-    - dbcategorydesc
     - dbrichsnippets
     - dbdatatext
     - dbthemecustom
@@ -217,7 +216,6 @@ global_settings:
       - dbfreeshipping
       - dbbrandslider
       - dbproductcomments
-      - dbcategorydesc
       - dbrichsnippets
       - dbdatatext
       - dbthemecustom
@@ -275,12 +273,16 @@ global_settings:
         description: Footer category
       - name: displayProductFullWidth
         title: displayProductFullWidth
+        description: Product Full Width
       - name: displaySidebarContact
         title: displaySidebarContact
+        description: Sidebar Contact
       - name: displayBlockLeftFooter
         title: displayBlockLeftFooter
+        description: Block Left Footer
       - name: displayFooterCopyright
         title: displayFooterCopyright
+        description: Footer Copyright
     modules_to_hook:
       displayAfterBodyOpeningTag:
       displayNavFullWidth:
@@ -298,7 +300,6 @@ global_settings:
         - ps_shoppingcart
       displayTopCenter:
         - dbsearchbar
-        - dbcontactinfo
       displayHome:
         - ps_imageslider
         - dbhomecategories
@@ -341,7 +342,6 @@ global_settings:
         - dbproductcomments
         - dbbestseller
         - dbnewproducts
-        - dbcategorydesc
         - dbcategories
       displaySidebarContact:
         - dbcontactinfo

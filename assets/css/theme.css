@@ -8,6 +8,7 @@
     transform: rotate(1turn);
   }
 }
+
 @keyframes splide-loading {
   0% {
     transform: rotate(0);
@@ -4964,5 +4965,91 @@ table tbody td {
 
   #blockcart-modal .modal-body {
     padding: 1rem;
+  }
+}
+
+/*kebes*/
+/*global*/
+@media (min-width: 1200px) {
+  .container {
+    width: 1470px;
+    max-width: 100%;
+  }
+}
+
+/*header*/
+#header .header-top .header__flex {
+  align-items: center;
+}
+
+#header .header-top .header__flex svg {
+  width: 31px !important;
+  height: 31px !important;
+}
+
+#header .header-top .header__flex .displayTop svg path {
+  fill: var(--color_icons_header);
+}
+
+#_desktop_cart > div > div > svg,
+#_desktop_user_info > div > span > svg {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+/*ets_megamenu*/
+#header .layout_layout1 .ets_mm_megamenu_content {
+  background: var(--header_bk);
+}
+
+#header .mm_menu_content_title {
+  color: var(--header_color);
+}
+
+body .ets_mm_megamenu::before {
+  background-color: rgb(255 255 255 / 50%) !important;
+}
+
+#header .layout_layout1 .mm_menus_li:nth-child(2) {
+  border-left: 0;
+}
+
+#header .layout_layout1 .mm_menus_li {
+  border-right: 0;
+}
+
+#header .layout_layout1 .mm_menus_li:last-child {
+  border-right: 0;
+}
+
+@media (min-width: 768px) {
+
+  #header .layout_layout1:not(.ybc_vertical_menu):not(.click_open_submenu) .mm_menus_li > a:before,
+  #header .layout_layout1:not(.ybc_vertical_menu).click_open_submenu .mm_menus_li.open_li > a:before,
+  #header .layout_layout1.ybc_vertical_menu:hover .ybc-menu-vertical-button:before,
+  #header .layout_layout1:hover .ybc-menu-vertical-button .ybc-menu-button-toggle_icon_default .icon-bar,
+  #header .ybc-menu-vertical-button.layout_layout1:hover {
+    background-color: var(--color_icons_header);
+  }
+
+  .layout_layout1 li:hover > a,
+  .layout_layout1 li > a:hover,
+  .layout_layout1 .mm_tabs_li.open .mm_tab_toggle_title,
+  .layout_layout1 .mm_tabs_li.open .mm_tab_toggle_title a,
+  .layout_layout1 .mm_tabs_li:hover .mm_tab_toggle_title,
+  .layout_layout1 .mm_tabs_li:hover .mm_tab_toggle_title a,
+  #header .layout_layout1 .mm_tabs_li.open .mm_tab_toggle_title,
+  #header .layout_layout1 .mm_tabs_li.open .mm_tab_toggle_title a,
+  #header .layout_layout1 .mm_tabs_li:hover .mm_tab_toggle_title,
+  #header .layout_layout1 .mm_tabs_li:hover .mm_tab_toggle_title a,
+  .layout_layout1.ybc_vertical_menu .mm_menus_li > a,
+  #header .layout_layout1 li:hover > a,
+  .layout_layout1.ybc_vertical_menu:not(.click_open_submenu) .mm_menus_li:hover > a,
+  .layout_layout1.ybc_vertical_menu.click_open_submenu .mm_menus_li.open_li > a,
+  #header .layout_layout1.ybc_vertical_menu:not(.click_open_submenu) .mm_menus_li:hover > a,
+  #header .layout_layout1.ybc_vertical_menu.click_open_submenu .mm_menus_li.open_li > a,
+  #header .layout_layout1 .mm_columns_ul .mm_block_type_product .product-title > a:hover,
+  #header .layout_layout1 li > a:hover {
+    color: var(--color_icons_header) !important;
   }
 }
