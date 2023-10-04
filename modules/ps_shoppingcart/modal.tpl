@@ -42,8 +42,17 @@
             <div class="modal_product modal_product_{$product.id}_{$product.id_product_attribute}">
               <div class="row">
                 <div class="col-md-3 col-sm-3 col-xs-3 modal_products_image">
-                  {if $product.default_image}
-                    <img class="product-image" src="{$product.default_image.medium.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" itemprop="image">
+                  {if $product.cover.bySize.cart_default}
+                    <picture>
+                      {if !empty($product.cover.bySize.cart_default.sources.avif)}<source srcset="{$product.cover.bySize.cart_default.sources.avif}" type="image/avif">{/if}
+                      {if !empty($product.cover.bySize.cart_default.sources.webp)}<source srcset="{$product.cover.bySize.cart_default.sources.webp}" type="image/webp">{/if}
+                      <img
+                        class="product-image"
+                        src="{$product.cover.bySize.cart_default.url}"
+                        alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
+                        loading="lazy"
+                      />
+                    </picture>
                   {else}
                     <img class="product-image" src="{$product.cover.medium.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" itemprop="image">
                   {/if}

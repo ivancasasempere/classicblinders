@@ -5075,6 +5075,32 @@ main {
   margin: 0 2px;
 }
 
+#products .thumbnail-container .product-thumbnail.multiple_img:hover .first_img,
+.featured-products .thumbnail-container .product-thumbnail.multiple_img:hover .first_img,
+.product-accessories .thumbnail-container .product-thumbnail.multiple_img:hover .first_img,
+.product-miniature .thumbnail-container .product-thumbnail.multiple_img:hover .first_img {
+  display: block;
+}
+
+#products .thumbnail-container .product-thumbnail.multiple_img .second_img,
+.featured-products .thumbnail-container .product-thumbnail.multiple_img .second_img,
+.product-accessories .thumbnail-container .product-thumbnail.multiple_img .second_img,
+.product-miniature .thumbnail-container .product-thumbnail.multiple_img .second_img {
+  display: block;
+  position: absolute;
+  top: 200vh;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+#products .thumbnail-container .product-thumbnail.multiple_img:hover .second_img,
+.featured-products .thumbnail-container .product-thumbnail.multiple_img:hover .second_img,
+.product-accessories .thumbnail-container .product-thumbnail.multiple_img:hover .second_img,
+.product-miniature .thumbnail-container .product-thumbnail.multiple_img:hover .second_img {
+  opacity: 1;
+  top: 0;
+}
+
 #products button.btn.btn-primary,
 .featured-products button.btn.btn-primary,
 .product-accessories button.btn.btn-primary,

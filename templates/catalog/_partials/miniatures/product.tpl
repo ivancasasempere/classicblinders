@@ -28,38 +28,53 @@
     <div class="thumbnail-container">
       {block name='product_thumbnail'}
           <a href="{$product.url}" class="thumbnail product-thumbnail {if count($product.images) > 1 && $custom_generic.second_img == true}multiple_img{/if}">
-          {if $product.cover}
-            <img
+
+            {if $product.cover}
+                <picture
                 {if count($product.images) > 1 && $custom_generic.second_img == true}
-                    class="first_img"
-                {/if}
-              src="{$product.cover.bySize.home_default.url}"
-              alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name}{/if}"
-              data-full-size-image-url="{$product.cover.large.url}"
-              loading="lazy"
-              width="{$product.cover.bySize.home_default.width}"
-              height="{$product.cover.bySize.home_default.height}"
-              />
+                  class="first_img"
+              {/if}
+                >
+                  {if !empty($product.cover.bySize.home_default.sources.avif)}<source srcset="{$product.cover.bySize.home_default.sources.avif}" type="image/avif">{/if}
+                  {if !empty($product.cover.bySize.home_default.sources.webp)}<source srcset="{$product.cover.bySize.home_default.sources.webp}" type="image/webp">{/if}
+                  <img
+                    src="{$product.cover.bySize.home_default.url}"
+                    alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
+                    loading="lazy"
+                    data-full-size-image-url="{$product.cover.large.url}"
+                    width="{$product.cover.bySize.home_default.width}"
+                    height="{$product.cover.bySize.home_default.height}"
+                  />
+                </picture>
+
 
               {if count($product.images) > 1 && $custom_generic.second_img == true}
+                <picture class="second_img">
+                  {if !empty($product.images.1.bySize.home_default.sources.avif)}<source srcset="{$product.images.1.bySize.home_default.sources.avif}" type="image/avif">{/if}
+                  {if !empty($product.images.1.bySize.home_default.sources.webp)}<source srcset="{$product.images.1.bySize.home_default.sources.webp}" type="image/webp">{/if}
                   <img
-                          class="second_img"
-                          src="{$product.images.1.bySize.home_default.url}"
-                          alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name}{/if}"
-                          data-full-size-image-url="{$product.cover.large.url}"
-                          loading="lazy"
-                          width="{$product.images.1.bySize.home_default.width}"
-                          height="{$product.images.1.bySize.home_default.height}"
+                    src="{$product.images.1.bySize.home_default.url}"
+                    alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
+                    loading="lazy"
+                    data-full-size-image-url="{$product.cover.large.url}"
+                    width="{$product.images.1.bySize.home_default.width}"
+                    height="{$product.images.1.bySize.home_default.height}"
                   />
-              {/if}
-          {else}
-            <img
-                src="{$urls.no_picture_image.bySize.home_default.url}"
-                loading="lazy"
-                width="{$product.cover.bySize.home_default.width}"
-                height="{$product.cover.bySize.home_default.height}"
-            />
-          {/if}
+                </picture>
+            {/if}
+            {else}
+                <picture>
+                  {if !empty($urls.no_picture_image.bySize.home_default.sources.avif)}<source srcset="{$urls.no_picture_image.bySize.home_default.sources.avif}" type="image/avif">{/if}
+                  {if !empty($urls.no_picture_image.bySize.home_default.sources.webp)}<source srcset="{$urls.no_picture_image.bySize.home_default.sources.webp}" type="image/webp">{/if}
+                  <img
+                    src="{$urls.no_picture_image.bySize.home_default.url}"
+                    loading="lazy"
+                    width="{$urls.no_picture_image.bySize.home_default.width}"
+                    height="{$urls.no_picture_image.bySize.home_default.height}"
+                  />
+                </picture>
+            {/if}
+
 
           {block name='product_name'}
             <p class="h3 product-title">{$product.name}</p>
