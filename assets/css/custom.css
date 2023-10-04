@@ -2,3 +2,16 @@
  * Custom code goes here.
  * A template should always ship with an empty custom.css
  */
+/**/
+#products .thumbnail-container .product-thumbnail img,
+.featured-products .thumbnail-container .product-thumbnail img,
+.product-accessories .thumbnail-container .product-thumbnail img,
+.product-miniature .thumbnail-container .product-thumbnail img {
+    aspect-ratio: 2 / 3;
+    display: block;
+    background: #EEE;
+}
+
+#subcategories ul li .subcategory-name img {
+    width: 125px !important;
+}

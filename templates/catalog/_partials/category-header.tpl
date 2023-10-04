@@ -48,20 +48,24 @@
 
         {if $db_subcategories == 1}
 
-            <div id="subcategories">
-                <ul class="clearfix">
-                    {foreach from=$subcategories item=subcategory}
-                        <li>
-                            <a class="subcategory-name" href="{$link->getCategoryLink($subcategory.id_category, $subcategory.link_rewrite)|escape:'html':'UTF-8'}">
-                                {if $subcategory.image.bySize.category_default.url}
-                                    <img src="{$subcategory.image.bySize.small_default.url}" alt="{$subcategory.name}" width="{$subcategory.image.bySize.category_default.width}" height="{$subcategory.image.bySize.category_default.height}" loading="lazy">
-                                {/if}
-                                {$subcategory.name|truncate:25:'...'|escape:'html':'UTF-8'}
-                            </a>
-                        </li>
-                    {/foreach}
-                </ul>
+            {if $subcategories}
+            <div id="subcategories" class="splide">
+                <div class="splide__track">
+                    <ul class="clearfix splide__list">
+                        {foreach from=$subcategories item=subcategory}
+                            <li class="splide__slide">
+                                <a class="subcategory-name" href="{$link->getCategoryLink($subcategory.id_category, $subcategory.link_rewrite)|escape:'html':'UTF-8'}">
+                                    {if $subcategory.image.bySize.category_default.url}
+                                        <img src="{$subcategory.image.bySize.small_default.url}" alt="{$subcategory.name}" width="{$subcategory.image.bySize.category_default.width}" height="{$subcategory.image.bySize.category_default.height}" loading="lazy">
+                                    {/if}
+                                    {$subcategory.name|escape:'html':'UTF-8'}
+                                </a>
+                            </li>
+                        {/foreach}
+                    </ul>
+                </div>
             </div>
+            {/if}
 
         {else}
             {if Context::getContext()->isMobile() == 1 || Context::getContext()->isTablet() == 1}
@@ -77,6 +81,46 @@
             {/if}
         {/if}
     {/if}
+
+    <script>
+    document.addEventListener( 'DOMContentLoaded', function () {
+        new Splide( '#subcategories', {
+            perPage     : 5,
+            pagination: false,
+            lazyLoad: 'sequential',
+            arrows: true,
+            breakpoints: {
+                575: {
+                    perPage: 1,
+                    padding: {
+                        right: '30%',
+                    },
+                    arrows: false,
+                    gap: '16px',
+                },
+                767: {
+                    perPage: 2,
+                    padding: {
+                        right: '15%',
+                    },
+                    arrows: false,
+                    gap: '16px',
+                },
+                992: {
+                    perPage: 3,
+                    padding: {
+                        right: '10%',
+                    },
+                    arrows: false,
+                    gap: '16px',
+                },
+                1200: {
+                    perPage: 5,
+                }
+            },
+        } ).mount();
+    } );
+</script>
 
     {hook h='displayBeforeProductList' category=$category}
 </div>
