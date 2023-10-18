@@ -74,10 +74,10 @@
                   />
                 </picture>
             {/if}
-
+          </a>
 
           {block name='product_name'}
-            <p class="h3 product-title">{$product.name}</p>
+            <a href="{$product.url}" class="h3 product-title">{$product.name}</a>
           {/block}
         </a>
       {/block}
