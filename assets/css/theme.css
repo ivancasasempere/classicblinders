@@ -5382,6 +5382,16 @@ body .ets_mm_megamenu::before {
 }
 
 /*product*/
+.product-reference {
+  margin-bottom: 0.5rem;
+}
+
+.product-reference span {
+  background: #f1f0f0;
+  padding: 3px 10px;
+  font-size: 0.8em;
+}
+
 .product-variants > .product-variants-item .color {
   width: 44px !important;
   height: 44px !important;
@@ -5416,4 +5426,9 @@ label .color,
 .lgcookieslaw-button-container .lgcookieslaw-reject-button,
 .lgcookieslaw-reject-button-enabled .lgcookieslaw-button-container .lgcookieslaw-accept-button {
   border: 0;
+}
+
+/*checkout*/
+#wrapper .cart-item .cart__product-qty .input-group {
+  z-index: 1;
 }

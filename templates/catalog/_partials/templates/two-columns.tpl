@@ -28,6 +28,11 @@
         {block name='page_header_container'}
             {block name='page_header'}
                 <h1 class="h1 product_name" >{block name='page_title'}{$product.name}{/block}</h1>
+                    {if isset($product.reference_to_display) && $product.reference_to_display neq ''}
+                        <div class="product-reference">
+                          <span>{$product.reference_to_display}</span>
+                        </div>
+                      {/if}
             {/block}
         {/block}
     {/if}
@@ -124,6 +129,13 @@
                 {block name='page_header_container'}
                     {block name='page_header'}
                         <h1 class="h1 product_name" >{block name='page_title'}{$product.name}{/block}</h1>
+
+                            {if isset($product.reference_to_display) && $product.reference_to_display neq ''}
+                                <div class="product-reference">
+                                  <span>{$product.reference_to_display}</span>
+                                </div>
+                              {/if}
+
                     {/block}
                 {/block}
             {/if}
