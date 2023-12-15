@@ -189,7 +189,6 @@ dependencies:
     - dbwishlist
     - dbjointpurchase
     - dbaboutus
-    - dbrecomendation
     - dbcategories
     - dbnewproducts
     - dbbestseller
@@ -224,7 +223,6 @@ global_settings:
       - dbwishlist
       - dbjointpurchase
       - dbaboutus
-      - dbrecomendation
       - dbcategories
       - dbnewproducts
       - dbbestseller
@@ -355,7 +353,6 @@ global_settings:
         - dbproductcomments
         - dbwishlist
       displayFooterProduct:
-        - dbrecomendation
         - dbproductcomments
         - dbbrandproducts
         - dbcategories

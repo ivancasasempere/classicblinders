@@ -135,7 +135,7 @@
                     <div id="splide_images_product" class="splide">
                         <div class="splide__track">
                             <div class="splide__list">
-                                {foreach from=$product.images item=image}
+                                {foreach from=$product.images key=index item=image}
                                     <div class="splide__slide product-cover">
                                         <picture>
                                                 {if !empty($image.bySize.medium_default.sources.avif)}<source srcset="{$image.bySize.medium_default.sources.avif}" type="image/avif">{/if}
@@ -216,7 +216,7 @@
                     <div id="splide_images_product_miniature_lateral" class="splide">
                         <div class="splide__track">
                             <div class="splide__list">
-                                {foreach from=$product.images item=image}
+                                {foreach from=$product.images key=index item=image}
                                     <div class="splide__slide product-cover">
                                         <picture>
                                                 {if !empty($image.bySize.medium_default.sources.avif)}<source srcset="{$image.bySize.medium_default.sources.avif}" type="image/avif">{/if}
@@ -286,7 +286,7 @@
                 <div id="splide_images_product" class="splide">
                     <div class="splide__track">
                         <div class="splide__list">
-                            {foreach from=$product.images item=image}
+                            {foreach from=$product.images key=index item=image}
                                 <div class="splide__slide product-cover">
                                     <picture>
                                             {if !empty($image.bySize.medium_default.sources.avif)}<source srcset="{$image.bySize.medium_default.sources.avif}" type="image/avif">{/if}
@@ -330,7 +330,7 @@
             {/if}
 
         {else}
-            {foreach from=$product.images item=image}
+            {foreach from=$product.images key=index item=image}
                 <div class="product-cover">
                     <picture>
                             {if !empty($image.bySize.medium_default.sources.avif)}<source srcset="{$image.bySize.medium_default.sources.avif}" type="image/avif">{/if}
