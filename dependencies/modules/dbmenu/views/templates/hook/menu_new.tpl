@@ -76,6 +76,9 @@
                                         {if !isset($menu.childrens)}
                                             {if $menu.ofuscate == 0}
                                                 <a href="{$menu.url}" class="item_primary" title="{$menu.alt}" {if !empty($menu.color)}style="color:{$menu.color};"{/if}>
+                                                    <div class="item_svg">
+                                                    {$menu.icon nofilter}
+                                                    </div>
                                                     {if $menu.img_menu != ''}
                                                         <img class="img_menu" src="{$menu.img_menu}" alt="{$menu.title}" loading="lazy" height="25" width="25">
                                                     {/if}
@@ -88,6 +91,9 @@
                                                 </a>
                                             {else}
                                                 <span datatext="{$menu.url|base64_encode}" class="item_primary datatext" {if !empty($menu.color)}style="color:{$menu.color};"{/if}>
+                                                    <div class="item_svg">
+                                                    {$menu.icon nofilter}
+                                                    </div>
                                                     {if $menu.img_menu != ''}
                                                         <img class="img_menu" src="{$menu.img_menu}" alt="{$menu.title}" loading="lazy" height="25" width="25">
                                                     {/if}
@@ -101,6 +107,9 @@
                                             {/if}
                                         {else}
                                             <span class="item_primary open_subitems" data-subitem="subitems_{$menu.id_dbmenu_list}" {if !empty($menu.color)}style="color:{$menu.color};"{/if}>
+                                                <div class="item_svg">
+                                                {$menu.icon nofilter}
+                                                </div>
                                                 {if $menu.img_menu != ''}
                                                     <img class="img_menu" src="{$menu.img_menu}" alt="{$menu.title}" loading="lazy" height="25" width="25">
                                                 {/if}

@@ -304,6 +304,14 @@ class AdminDbMenuListController extends ModuleAdminController
                     'class' => 'disabled',
                 ),
                 array(
+                    'type' => 'textarea',
+                    'label' => $this->trans('Icon', array(), 'Admin.Global'),
+                    'desc' => $this->trans('Icon SVG', array(), 'Admin.Global'),
+                    'name' => 'icon',
+                    'disabled' => true,
+                    'class' => 'disabled',
+                ),
+                array(
                     'type' => 'switch',
                     'label' => $this->trans('Ofuscado', array(), 'Admin.Global'),
                     'desc' => $this->trans('Ocultar el enlace a Google', array(), 'Admin.Global'),

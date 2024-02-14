@@ -75,8 +75,8 @@ $(document).ready(function() {
     });
 
     // Inputs switch PRO
-    $(":disabled").parents('.switch').parents('div').parents('.form-group').addClass("group_pro");
-    $(":disabled").parents('.switch').parents('div').parents('.form-group').append('<span class="pro_tag">PRO</span>');
+    //$(":disabled").parents('.switch').parents('div').parents('.form-group').addClass("group_pro");
+    //$(":disabled").parents('.switch').parents('div').parents('.form-group').append('<span class="pro_tag">PRO</span>');
     // Inputs color PRO
     /*$("input.disabled").parents('.input-group').parents('div').parents('div').parents('div').parents('div').parents('.form-group').addClass("group_pro");
     $("input.disabled").parents('.input-group').parents('div').parents('div').parents('div').parents('div').parents('.form-group').append('<span class="pro_tag">PRO</span>');*/
@@ -84,8 +84,8 @@ $(document).ready(function() {
     /*$("input.disabled").parents('div').parents('div').parents('div').parents('div').parents('div').parents('.form-group').addClass("group_pro");
     $("input.disabled").parents('div').parents('div').parents('div').parents('div').parents('div').parents('.form-group').append('<span class="pro_tag">PRO</span>');*/
     // Inputs text PRO
-    $("input.disabled").parents('.form-group').addClass("group_pro");
-    $("input.disabled").parents('.form-group').append('<span class="pro_tag">PRO</span>');
+    //$("input.disabled").parents('.form-group').addClass("group_pro");
+    //$("input.disabled").parents('.form-group').append('<span class="pro_tag">PRO</span>');
 
 });
 

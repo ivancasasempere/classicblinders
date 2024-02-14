@@ -32,6 +32,7 @@ class DbMenuList extends ObjectModel
     public $id_item;
     public $strong = 0;
     public $color;
+    public $icon;
     public $alt;
     public $ofuscate = 0;
     public $featured = 0;
@@ -54,6 +55,7 @@ class DbMenuList extends ObjectModel
             'id_item' =>		array('type' => self::TYPE_INT, 'validate' => 'isunsignedInt', 'required' => false),
             'strong' =>		    array('type' => self::TYPE_BOOL, 'validate' => 'isBool', 'required' => false),
             'color' =>		    array('type' => self::TYPE_STRING, 'validate' => 'isCleanHtml', 'required' => false, 'size' => 10),
+            'icon' =>		    array('type' => self::TYPE_HTML, 'required' => false),
             'ofuscate' =>		array('type' => self::TYPE_BOOL, 'validate' => 'isBool', 'required' => false),
             'additional' =>		array('type' => self::TYPE_BOOL, 'validate' => 'isBool', 'required' => false),
             'featured' =>		array('type' => self::TYPE_BOOL, 'validate' => 'isBool', 'required' => false),
@@ -195,15 +197,16 @@ class DbMenuList extends ObjectModel
             'strong' => $parent['strong'],
             'color' => $parent['color'],
             'type' => $parent['type'],
+            'icon' => $parent['icon'],
         );
 
         return $menu;
     }
 
     public static function getMenuLinks($id_lang, $id_shop){
-        $sql = "SELECT * 
+        $sql = "SELECT *
                 FROM "._DB_PREFIX_."dbmenu_list ml
-                INNER JOIN  "._DB_PREFIX_."dbmenu_list_lang mll 
+                INNER JOIN  "._DB_PREFIX_."dbmenu_list_lang mll
                     ON ml.id_dbmenu_list = mll.id_dbmenu_list AND mll.id_lang = '$id_lang' AND mll.id_shop = '$id_shop'
                 WHERE active = 1 AND id_parent = 0
                 ORDER BY ml.position ASC";
@@ -224,9 +227,9 @@ class DbMenuList extends ObjectModel
     }
 
     public static function getChildrensMenuLinks($id_lang, $id_parent, $id_shop){
-        $sql = "SELECT * 
+        $sql = "SELECT *
                 FROM "._DB_PREFIX_."dbmenu_list ml
-                INNER JOIN  "._DB_PREFIX_."dbmenu_list_lang mll 
+                INNER JOIN  "._DB_PREFIX_."dbmenu_list_lang mll
                     ON ml.id_dbmenu_list = mll.id_dbmenu_list AND mll.id_lang = '$id_lang' AND mll.id_shop = '$id_shop'
                 WHERE active = 1 AND id_parent = ".$id_parent."
                 ORDER BY ml.position ASC";
@@ -251,9 +254,9 @@ class DbMenuList extends ObjectModel
     }
 
     public static function getFeaturedLink($id_lang, $id_shop){
-        $sql = "SELECT * 
+        $sql = "SELECT *
                 FROM "._DB_PREFIX_."dbmenu_list ml
-                INNER JOIN  "._DB_PREFIX_."dbmenu_list_lang mll 
+                INNER JOIN  "._DB_PREFIX_."dbmenu_list_lang mll
                     ON ml.id_dbmenu_list = mll.id_dbmenu_list AND mll.id_lang = '$id_lang' AND mll.id_shop = '$id_shop'
                 WHERE active = 1 AND featured = 1
                 ORDER BY ml.position ASC";
@@ -266,9 +269,9 @@ class DbMenuList extends ObjectModel
     }
 
     public static function getAdditionalLink($id_lang, $id_shop){
-        $sql = "SELECT * 
+        $sql = "SELECT *
                 FROM "._DB_PREFIX_."dbmenu_list ml
-                INNER JOIN  "._DB_PREFIX_."dbmenu_list_lang mll 
+                INNER JOIN  "._DB_PREFIX_."dbmenu_list_lang mll
                     ON ml.id_dbmenu_list = mll.id_dbmenu_list AND mll.id_lang = '$id_lang' AND mll.id_shop = '$id_shop'
                 WHERE active = 1 AND additional = 1
                 ORDER BY ml.position ASC";

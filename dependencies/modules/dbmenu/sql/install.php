@@ -31,6 +31,7 @@ $sql[] = 'CREATE TABLE IF NOT EXISTS `' . _DB_PREFIX_ . 'dbmenu_list` (
     `id_item` int(11) NOT NULL DEFAULT \'0\',
     `strong` tinyint(1) NOT NULL DEFAULT \'0\',
     `color` varchar(10) NOT NULL,
+    `icon` TEXT NOT NULL,
     `ofuscate` tinyint(1) unsigned NOT NULL DEFAULT \'0\',
     `additional` tinyint(1) unsigned NOT NULL DEFAULT \'0\',
     `featured` tinyint(1) unsigned NOT NULL DEFAULT \'0\',
