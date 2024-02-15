@@ -169,10 +169,6 @@
                             </div>
                         {/if}
 
-                        <div class="dbmenu_inside">
-                            {hook h='displayMenuInside'}
-                        </div>
-
                         {if $show_contact}
                             <div class="dbmenu_contact">
                                 <span class="title">{l s='Contacta con nosotros' mod='dbmenu'}</span>

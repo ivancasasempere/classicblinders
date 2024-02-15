@@ -91,7 +91,6 @@ class Dbmenu extends Module
         return parent::install() &&
             $this->registerHook('displayHeader') &&
             $this->registerHook('displayBackOfficeHeader') &&
-            $this->registerHook('displayMenuInside') &&
             $this->registerHook('displayNavFullWidth');
     }
 
