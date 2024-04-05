@@ -337,7 +337,7 @@ class Dbrichsnippets extends Module
             if (Module::isInstalled('dbaboutus') && Module::isEnabled('dbaboutus')) {
 
                 $db = \Db::getInstance();
-                $request = "SELECT * 
+                $request = "SELECT *
                             FROM `" . _DB_PREFIX_ . "dbaboutus_author` a
                             INNER JOIN `" . _DB_PREFIX_ . "dbaboutus_author_lang` al ON a.id_dbaboutus_author = al.id_dbaboutus_author AND al.id_lang = '$id_lang'
                             WHERE a.active = 1";
@@ -393,7 +393,7 @@ class Dbrichsnippets extends Module
 
                 $json .= '
                         ]
-                }</script>'; 
+                }</script>';
 
             }
 
@@ -555,19 +555,19 @@ class Dbrichsnippets extends Module
                     "category": "' . $categoria . '",
                     "alternateName": "Compra ' . str_replace('"', "'", $product->name) . ' a buen precio",
                     "url": "' . $product_url . '"';
-                if($offer == 1) {
+                //if($offer == 1) {
                     $json .= ',
-                        "offers": {    		
+                        "offers": {
                             "@type": "offer",
                             "price": "' . $price . '",
-                            "priceCurrency": "' . $context->currency->iso_code . '", 
+                            "priceCurrency": "' . $context->currency->iso_code . '",
                             "itemOffered": "' . str_replace('"', "'", $product->name) . '",
-                            "availability": "'.$available.'", 
+                            "availability": "'.$available.'",
                             "priceValidUntil": "'.$date_upd.'",
-                            "itemCondition":"http://schema.org/NewCondition", 
+                            "itemCondition":"http://schema.org/NewCondition",
                             "url": "' . $product_url . '"
                         }';
-                }
+                //}
                 if ($rating['total'] > 0) {
                     $json .= ',
                         "aggregateRating": {
@@ -579,9 +579,9 @@ class Dbrichsnippets extends Module
                             "reviewCount": "' . $rating_total . '"
                         }';
 
-                    $json .= ',  		
+                    $json .= ',
                             "review": [
-                                ' . $vals . '                
+                                ' . $vals . '
                             ]';
                 }
 
@@ -621,7 +621,7 @@ class Dbrichsnippets extends Module
 
             $json .= '
                     ]
-            }</script>'; 
+            }</script>';
             /* BreadcrumbList Marca */
 
         } elseif ($sectionType == 'cms') {
@@ -656,7 +656,7 @@ class Dbrichsnippets extends Module
 
             $json .= '
                     ]
-            }</script>'; 
+            }</script>';
             /* BreadcrumbList Marca */
 
         }
@@ -704,10 +704,10 @@ class Dbrichsnippets extends Module
         }
 
             $j++;
-            
+
         }
         $return = array(
-            'json' => $json, 
+            'json' => $json,
             'number' => $j
         );
 
@@ -763,7 +763,7 @@ class Dbrichsnippets extends Module
         }';
 
         $return = array(
-            'json' => $json, 
+            'json' => $json,
         );
 
         return $return;
