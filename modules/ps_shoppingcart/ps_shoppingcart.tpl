@@ -30,9 +30,8 @@
       {/if}
         <i class="fa-solid fa-cart-shopping"></i>
             {if $cart.products_count > 0}
-                <span class="cart-products-count"></span>
+                <span class="cart-products-count">{$cart.products_count}</span>
             {/if}
-        <span class="icon_name">{l s='Carrito' d='Modules.Shoppingcart.Shop'} ({$cart.products_count})</span>
       {if $cart.products_count > 0}
         </a>
       {/if}

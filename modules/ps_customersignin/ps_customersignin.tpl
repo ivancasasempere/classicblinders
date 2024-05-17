@@ -39,7 +39,6 @@
         class="datatext userinfo_header"
       >
         <i class="fa-solid fa-user"></i>
-          <span class="icon_name">{l s='Iniciar sesión' d='Modules.Customersignin.Shop'}</span>
       </span>
     {/if}
   </div>
