@@ -59,6 +59,14 @@
             {include file='_partials/breadcrumb.tpl'}
           {/block}
 
+          {if $page.page_name == 'category' }
+            <div id="full-column-pre">
+                {block name='content_before'}
+
+                {/block}
+            </div>
+          {/if}
+
           {block name="left_column"}
             <div id="left-column" class="col-xs-12 col-sm-4 col-md-3">
               {if $page.page_name == 'product'}
