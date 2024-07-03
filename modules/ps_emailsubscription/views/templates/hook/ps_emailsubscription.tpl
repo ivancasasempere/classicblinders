@@ -47,6 +47,7 @@
                       value="{l s='Subscribe' d='Shop.Theme.Actions'}"
                   >
               </div>
+            {hook h='displayNewsletterRegistration'}
             <input type="hidden" name="blockHookName" value="{$hookName}" />
             <input type="hidden" name="action" value="0">
             <div class="clearfix"></div>

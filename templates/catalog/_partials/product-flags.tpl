@@ -23,6 +23,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 {block name='product_flags'}
+    {if !$configuration.is_catalog}
     <ul class="product-flags">
         {foreach from=$product.flags item=flag}
             {if $flag.type != 'discount'}
@@ -30,4 +31,5 @@
             {/if}
         {/foreach}
     </ul>
+    {/if}
 {/block}

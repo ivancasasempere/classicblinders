@@ -45,6 +45,7 @@
                 perPage     : 5,
                 pagination: false,
                 lazyLoad: 'sequential',
+                gap: 10,
                 arrows: true,
                 breakpoints: {
                     575: {
