@@ -24,9 +24,12 @@
  *}
 <div id="js-product-list-footer">
     {if isset($category) && $category.additional_description && $listing.pagination.items_shown_from == 1}
-        <div class="dbcategorydesc mt-50">
-                <p class="h3 title">{l s='Más información sobre' d='Modules.Dbcategorydesc.Shop'} {$category.name}</p>
+        <div class="card">
+            <div class="card-block category-additional-description">
+                <div class="dbcategorydesc mt-50">
+                <h3 class="h3 title">{l s='Más información sobre' d='Modules.Dbcategorydesc.Shop'} {$category.name}</h3>
                 {$category.additional_description nofilter}
+            </div>
         </div>
     {/if}
 </div>

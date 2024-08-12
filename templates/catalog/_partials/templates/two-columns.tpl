@@ -27,7 +27,7 @@
     {if Context::getContext()->isMobile() == 1}
         {block name='page_header_container'}
             {block name='page_header'}
-                <h1 class="h1 product_name" >{block name='page_title'}{$product.name}{/block}</h1>
+                <h1 class="h1 product_name">{block name='page_title'}{$product.name}{/block}</h1>
                     {if isset($product.reference_to_display) && $product.reference_to_display neq ''}
                         <div class="product-reference">
                           <span>{$product.reference_to_display}</span>
@@ -74,7 +74,8 @@
                 {hook h='displayProductCenterColumn' product=$product}
             </div>
             {block name='product_description_short'}
-                <div id="product-description-short-{$product.id}" class="product-description" itemprop="description">{$product.description_short nofilter}</div>
+                <div id="product-description-short-{$product.id}" class="product-description" itemprop="description">
+                    {$product.description_short nofilter}</div>
             {/block}
             {hook h='displayBlockLeftFooter'}
 
@@ -109,9 +110,9 @@
                         {foreach from=$product.attachments item=attachment}
                             {assign var=url_attach value="/index.php?controller=attachment&id_attachment={$attachment.id_attachment}"}
                             <span class="attach datatext" datatext="{$url_attach|base64_encode}">
-                                            <i class="fa-solid fa-download"></i>
-                                            {$attachment.name}
-                                        </span>
+                                <i class="fa-solid fa-download"></i>
+                                {$attachment.name}
+                            </span>
                         {/foreach}
                     </div>
                 {/if}
@@ -128,7 +129,7 @@
                 {/if}
                 {block name='page_header_container'}
                     {block name='page_header'}
-                        <h1 class="h1 product_name" >{block name='page_title'}{$product.name}{/block}</h1>
+                        <h1 class="h1 product_name">{block name='page_title'}{$product.name}{/block}</h1>
 
                             {if isset($product.reference_to_display) && $product.reference_to_display neq ''}
                                 <div class="product-reference">
@@ -150,7 +151,8 @@
 
             {if Context::getContext()->isMobile() == 0}
                 {block name='product_description_short'}
-                    <div id="product-description-short-{$product.id}" class="product-description" itemprop="description">{$product.description_short nofilter}</div>
+                    <div id="product-description-short-{$product.id}" class="product-description" itemprop="description">
+                        {$product.description_short nofilter}</div>
                 {/block}
             {/if}
 
@@ -158,7 +160,8 @@
                 <form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh">
                     <input type="hidden" name="token" value="{$static_token}">
                     <input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
-                    <input type="hidden" name="id_customization" value="{$product.id_customization}" id="product_customization_id">
+                    <input type="hidden" name="id_customization" value="{$product.id_customization}"
+                        id="product_customization_id">
 
                     <div class="product_variants">
                         {block name='product_variants'}
