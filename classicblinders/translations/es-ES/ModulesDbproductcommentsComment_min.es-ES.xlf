@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="admin158mcmbfaavzwdizlmm" source-language="es-ES" target-language="es-ES" datatype="plaintext">
+    <body>
+      <trans-unit id="fb1a6f2abe85ec57a6f0f39da4b74fdc">
+        <source>Características</source>
+        <target>Características</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="206450aff5b0f17a7ebf25b7c1e4e321">
+        <source>No recomendaría la compra de este producto</source>
+        <target>No recomendaría la compra de este producto</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e8c01d7446920e2ecba5c0a839357c0b">
+        <source>Recomendaría la compra de este producto</source>
+        <target>Recomendaría la compra de este producto</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="07b5169ca46eebb5d5d3a2792f8f971d">
+        <source>Opinión verificada</source>
+        <target>Opinión verificada</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="65c10911d8b8591219a21ebacf46da01">
+        <source>el</source>
+        <target>el</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="872dce45bd0af5af99fb644d93df6cb4">
+        <source>Por</source>
+        <target>Por</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

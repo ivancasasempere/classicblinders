@@ -2,14 +2,14 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file original="admin158mcmbfaavzwdizlmm" source-language="es-ES" target-language="es-ES" datatype="plaintext">
     <body>
-      <trans-unit id="115dbd02b7df53197a36fd3489031acd">
-        <source>Nuestras marcas</source>
-        <target>Nuestras marcas</target>
+      <trans-unit id="7aff0e242f22138fcd918e04b7f4589d">
+        <source>comentarios</source>
+        <target>comentarios</target>
         <note>Line: </note>
       </trans-unit>
-      <trans-unit id="769c43cf14f57c35eb369baf90a71d25">
-        <source>Principales marcas</source>
-        <target>Principales marcas</target>
+      <trans-unit id="e417046f842cb9300ba6e760e0a0bc9e">
+        <source>comentario</source>
+        <target>comentario</target>
         <note>Line: </note>
       </trans-unit>
     </body>

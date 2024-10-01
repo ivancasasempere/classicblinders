@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="admin158mcmbfaavzwdizlmm" source-language="es-ES" target-language="es-ES" datatype="plaintext">
+    <body>
+      <trans-unit id="b98e15fa1bad93642b9b8720fe487fa5">
+        <source>Este producto no tiene opiniones ¡Sé el primero!</source>
+        <target>Este producto no tiene opiniones ¡Sé el primero!</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6daf902cb49536c1a35be7213267188b">
+        <source>1 estrella</source>
+        <target>1 estrella</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b52a15d728d9ecf423024d54edfb665e">
+        <source>2 estrellas</source>
+        <target>2 estrellas</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="76a7ba10023a2f64b45b58eafd97da84">
+        <source>3 estrellas</source>
+        <target>3 estrellas</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="829da139003495b7f001060c36f7a85a">
+        <source>4 estrellas</source>
+        <target>4 estrellas</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2fbbeeeb2b9ae7d95cebe4cdc549d74a">
+        <source>5 estrellas</source>
+        <target>5 estrellas</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8f72711fbb3fc79c4ef0c9124c3e4c67">
+        <source>Opinar sobre este producto</source>
+        <target>Opinar sobre este producto</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="16dbf9b77e1a1d84076c573eefb556a2">
+        <source>Opiniones</source>
+        <target>Opiniones</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7e11390c7fb0e40d22e5e1e7177648b2">
+        <source>Opiniones del producto</source>
+        <target>Opiniones del producto</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

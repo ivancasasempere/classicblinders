@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="admin158mcmbfaavzwdizlmm" source-language="es-ES" target-language="es-ES" datatype="plaintext">
+    <body>
+      <trans-unit id="006e6ecb27ade34e544e5c834bae7d0e">
+        <source>Guardar y continuar</source>
+        <target>Guardar y continuar</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bafd7322c6e97d25b6299b5d6fe8920b">
+        <source>No</source>
+        <target>No</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="29bf7a323f1088692c1ad29f08f4f573">
+        <source>Si</source>
+        <target>Si</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="51b1eb0cee5a30616512f9f88d8bc239">
+        <source>¿Recomendarias a otros usuarios la compra de este producto?</source>
+        <target>¿Recomendarias a otros usuarios la compra de este producto?</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a14ecdee223a430b2894ebdd02d4356b">
+        <source>¡Sabemos que os encantan las barritas de puntuación!</source>
+        <target>¡Sabemos que os encantan las barritas de puntuación!</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5fe4fff8f51bd724a0e7396a953c5f62">
+        <source>Valorando estas características, nos permitiras ofercer una mejor descripciuón del producto.</source>
+        <target>Valorando estas características, nos permitiras ofercer una mejor descripciuón del producto.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="cf6ee66ec00f0aaa490bb6b9325e3b12">
+        <source>Ayudanos a hacerlo mucho más fácil</source>
+        <target>Ayudanos a hacerlo mucho más fácil</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9c8f72ed2db12f41896fe07e2443e182">
+        <source>Tú opinión</source>
+        <target>Tú opinión</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d7ff1d6d642783b25ca7ea611bc9b482">
+        <source>Tú título aquí</source>
+        <target>Tú título aquí</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d939604f75089cdce0bfb5c3ea4becfb">
+        <source>Título opinión</source>
+        <target>Título opinión</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="591705c9de6aeb05f85e8afa2ea83ff5">
+        <source>Valoración global</source>
+        <target>Valoración global</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2883f68e2831732eea070d9f0b960954">
+        <source>Hola %name%, dejanos tu valoración sobre este producto</source>
+        <target>Hola %name%, dejanos tu valoración sobre este producto</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3ee9d734519593790870e290c3694165">
+        <source>Da tu opinión sobre este producto</source>
+        <target>Da tu opinión sobre este producto</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="admin158mcmbfaavzwdizlmm" source-language="es-ES" target-language="es-ES" datatype="plaintext">
+    <body>
+      <trans-unit id="92eb39a1407d02c39fc0403548241472">
+        <source>Cerrar</source>
+        <target>Cerrar</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a846a6506cea50a143ae79aafd46d7d8">
+        <source>Seleccionar</source>
+        <target>Seleccionar</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e553553741372c7fb89d5a9051bb0ccf">
+        <source>Seleccionado</source>
+        <target>Seleccionado</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0288e36d09b3e6a4f13b23eb26e59514">
+        <source>Cambiar producto</source>
+        <target>Cambiar producto</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -2,9 +2,9 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file original="admin158mcmbfaavzwdizlmm" source-language="es-ES" target-language="es-ES" datatype="plaintext">
     <body>
-      <trans-unit id="fa2e30761ed9ed25070ee4496b8eb71e">
-        <source>Mis opiniones</source>
-        <target>Mis opiniones</target>
+      <trans-unit id="11f8046e4657cd5ab07d97c27cde50ee">
+        <source>opiniones</source>
+        <target>opiniones</target>
         <note>Line: </note>
       </trans-unit>
     </body>

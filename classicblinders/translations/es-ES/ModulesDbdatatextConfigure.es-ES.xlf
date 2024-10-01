@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="admin158mcmbfaavzwdizlmm" source-language="es-ES" target-language="es-ES" datatype="plaintext">
+    <body>
+      <trans-unit id="a60ba48e133311a61b5032af7ff66010">
+        <source>Si queremos abrir el link en una pestaña nueva seria este formato</source>
+        <target>Si queremos abrir el link en una pestaña nueva seria este formato</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="010ca5e4876f8fb2c1bc623ec3841a8b">
+        <source>Lo modificamos con este formato</source>
+        <target>Lo modificamos con este formato</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="582af0f8c0374bd35050c817652e1d54">
+        <source>Ejemplo de enlace a ofuscar</source>
+        <target>Ejemplo de enlace a ofuscar</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="82644ab2c6b32f102f4af55cac6958d7">
+        <source>Si queremos abrir el enlace en una pestaña nueva hay que añadirle la siguiente etiqueta</source>
+        <target>Si queremos abrir el enlace en una pestaña nueva hay que añadirle la siguiente etiqueta</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="fd417e92d8adc92ec42413c6ffa4b143">
+        <source>El enlace debe de estar codificado en Base64</source>
+        <target>El enlace debe de estar codificado en Base64</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2c6ee9dc8f1bf168cd21788db69c3e30">
+        <source>y dentro insertar el enlace</source>
+        <target>y dentro insertar el enlace</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5e9d1189775744bfb4438fc09f78e8ae">
+        <source>Debe de haber una etiqueta llamada</source>
+        <target>Debe de haber una etiqueta llamada</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b6389ced2cca1282db64ac7a904e27c5">
+        <source>La clase del contenedor (div, span, p, etc) debe de contener una llamada</source>
+        <target>La clase del contenedor (div, span, p, etc) debe de contener una llamada</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="da90a7f0ab8563fbc49630b62f9df165">
+        <source>Para la ofuscación necesitamos tener en cuenta los siguientes puntos:</source>
+        <target>Para la ofuscación necesitamos tener en cuenta los siguientes puntos:</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e0689669ac0568a4d102ce3f01b13aed">
+        <source>Este módulo no ofusca los enlaces automáticamente, hay que modificar el html del enlace.</source>
+        <target>Este módulo no ofusca los enlaces automáticamente, hay que modificar el html del enlace.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5b6cf869265c13af8566f192b4ab3d2a">
+        <source>Documentation</source>
+        <target>Documentation</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

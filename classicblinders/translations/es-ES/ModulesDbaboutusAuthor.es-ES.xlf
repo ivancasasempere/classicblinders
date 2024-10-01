@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="admin158mcmbfaavzwdizlmm" source-language="es-ES" target-language="es-ES" datatype="plaintext">
+    <body>
+      <trans-unit id="1d1fff65ff6db62b803269f46dcf9eb6">
+        <source>Nº colegiado</source>
+        <target>Nº colegiado</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f04fc6cd3a0fa722c693db0bc904c595">
+        <source>Especialidades</source>
+        <target>Especialidades</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="238eb29012afb548172f6f692074b99e">
+        <source>Me has podido ver en:</source>
+        <target>Me has podido ver en:</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="23307f3e2151e8f371762aa2f8e7be48">
+        <source>Últimos posts</source>
+        <target>Últimos posts</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

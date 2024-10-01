@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="admin158mcmbfaavzwdizlmm" source-language="es-ES" target-language="es-ES" datatype="plaintext">
+    <body>
+      <trans-unit id="57be6833ee163fb28bd5b496830b205f">
+        <source>Ha habido un problema en la importación, intentelo de nuevo o contacte con DevBlinders</source>
+        <target>Ha habido un problema en la importación, intentelo de nuevo o contacte con DevBlinders</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="425ca0084c9a7425a1d341bb1a463034">
+        <source>La importación se ha realizado correctamente.</source>
+        <target>La importación se ha realizado correctamente.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="39fbacb98f1cdab1c112af6c060197ec">
+        <source>Importando las categorías, espere por favor.</source>
+        <target>Importando las categorías, espere por favor.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0b7253f352fa390d7d68365ac7dcae5e">
+        <source>Importar</source>
+        <target>Importar</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="29bf7a323f1088692c1ad29f08f4f573">
+        <source>Si</source>
+        <target>Si</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bafd7322c6e97d25b6299b5d6fe8920b">
+        <source>No</source>
+        <target>No</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="cdc5d280d633de8a1795b29a33980669">
+        <source>¿Borrar menú actual?</source>
+        <target>¿Borrar menú actual?</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8fa30b9b8f927ae6aae2ecbfdda340c9">
+        <source>Desde este importador puedes importar todo el arbol de categorías y subcategorias en el menú.</source>
+        <target>Desde este importador puedes importar todo el arbol de categorías y subcategorias en el menú.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="48902453ec5e9c4033205c2aa7dee99c">
+        <source>Importar categorías en el menú</source>
+        <target>Importar categorías en el menú</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

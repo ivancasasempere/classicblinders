@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="admin158mcmbfaavzwdizlmm" source-language="es-ES" target-language="es-ES" datatype="plaintext">
+    <body>
+      <trans-unit id="9877ab3ea0084df08ac93e6316127a58">
+        <source>Artículos añadidos</source>
+        <target>Artículos añadidos</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f7043a1b0ffcc41e46de8c9c2181ad02">
+        <source>Añadir artículos</source>
+        <target>Añadir artículos</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="45ba72aaa1734e96eb6c2cf483477906">
+        <source>IVA incluido</source>
+        <target>IVA incluido</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="038f442367c6a8c81b19b438cd473067">
+        <source>producto(s) por</source>
+        <target>producto(s) por</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2edba34a121dc49c3e1c33b8c46792e5">
+        <source>Comprados juntos habitualmente</source>
+        <target>Comprados juntos habitualmente</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

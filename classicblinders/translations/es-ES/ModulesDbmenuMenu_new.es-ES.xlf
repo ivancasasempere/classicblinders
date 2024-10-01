@@ -1,15 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file original="Backoffice" source-language="es-ES" target-language="es-ES" datatype="plaintext">
+  <file original="admin158mcmbfaavzwdizlmm" source-language="es-ES" target-language="es-ES" datatype="plaintext">
     <body>
-      <trans-unit id="010725dd136c913eed2ec1e23476fd13">
-        <source>Categorías</source>
-        <target>Categorías</target>
+      <trans-unit id="af1b98adf7f686b84cd0b443e022b7a0">
+        <source>Categories</source>
+        <target>Categories</target>
         <note>Line: </note>
       </trans-unit>
-      <trans-unit id="bbaff12800505b22a853e8b7f4eb6a22">
-        <source>Contact</source>
-        <target>Contact</target>
+      <trans-unit id="d41e7df702fdbe36d7ff245db03514b4">
+        <source>De más de %total_comment% opiniones.</source>
+        <target>De más de %total_comment% opiniones.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d38895fb13d1d29e4b1bd0599ad08343">
+        <source>Opiniones verificadas</source>
+        <target>Opiniones verificadas</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8b777ebcc5034ce0fe96dd154bcb370e">
+        <source>WhatsApp</source>
+        <target>WhatsApp</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="eb82f0272d508ead972b823ecbf62c11">
+        <source>Llámanos</source>
+        <target>Llámanos</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2a2756f8203a2ff45593f611489b5edb">
+        <source>Enviar un email</source>
+        <target>Enviar un email</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d1bd4e55018a381882940aff2218c015">
+        <source>Contacta con nosotros</source>
+        <target>Contacta con nosotros</target>
         <note>Line: </note>
       </trans-unit>
       <trans-unit id="ed82be43bd725fba3ec93d5ead1909c9">
@@ -32,11 +57,6 @@
         <target>Mi cuenta</target>
         <note>Line: </note>
       </trans-unit>
-      <trans-unit id="4d1159b637730361abc7f2b0a3a9e368">
-        <source>Personal area</source>
-        <target>Personal area</target>
-        <note>Line: </note>
-      </trans-unit>
       <trans-unit id="aa966585d8fb96a833fcbcfe0121bf21">
         <source>Categorias</source>
         <target>Categorias</target>
@@ -50,6 +70,21 @@
       <trans-unit id="3618942fc64b05d026766deb89fbcdba">
         <source>Nuestro catálogo</source>
         <target>Nuestro catálogo</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="4d1159b637730361abc7f2b0a3a9e368">
+        <source>Personal area</source>
+        <target>Datos personales</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bbaff12800505b22a853e8b7f4eb6a22">
+        <source>Contact</source>
+        <target>Contacto</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d918f99442796e88b6fe5ad32c217f76">
+        <source>Follow us</source>
+        <target>Síguenos</target>
         <note>Line: </note>
       </trans-unit>
     </body>
