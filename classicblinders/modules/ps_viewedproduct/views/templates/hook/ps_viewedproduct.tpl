@@ -22,7 +22,64 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
-<section class="featured-products clearfix mt-3">
-  <h2>{l s='Viewed products' d='Shop.Theme.Catalog'}</h2>
-  {include file="catalog/_partials/productlist.tpl" products=$products}
+
+
+ <section class="featured-products clearfix --mt-16">
+ <p class="h1 products-section-title">
+     {l s='Viewed products' d='Shop.Theme.Catalog'}
+ </p>
+
+ <div id="splide_viewedproducts" class="splide">
+     <div class="splide__track">
+         <div class="splide__list">
+             {foreach from=$products item=product}
+                 <div class="splide__slide">
+                     {include file="catalog/_partials/miniatures/product.tpl" product=$product}
+                 </div>
+             {/foreach}
+         </div>
+     </div>
+ </div>
+
+ <script>
+     document.addEventListener( 'DOMContentLoaded', function () {
+         new Splide( '#splide_viewedproducts', {
+             perPage     : 5,
+             pagination: false,
+             lazyLoad: 'sequential',
+             arrows: true,
+             gap: '16px',
+             breakpoints: {
+                 575: {
+                     perPage: 1,
+                     padding: {
+                         right: '30%',
+                     },
+                     arrows: false,
+                     gap: '16px',
+                 },
+                 767: {
+                     perPage: 2,
+                     padding: {
+                         right: '15%',
+                     },
+                     arrows: false,
+                     gap: '16px',
+                 },
+                 992: {
+                     perPage: 3,
+                     padding: {
+                         right: '10%',
+                     },
+                     arrows: false,
+                     gap: '16px',
+                 },
+                 1200: {
+                     perPage: 5,
+                 }
+             },
+         } ).mount();
+     } );
+ </script>
+
 </section>
