@@ -27,17 +27,17 @@
     <p class="detalle product-discounts-title"><i class="fa-solid fa-gift"></i> {l s='Packs descuento' d='Shop.Theme.Catalog'}</p>
     <div class="product_packs_dto">
       {foreach from=$product.quantity_discounts item='quantity_discount' name='quantity_discounts'}
-        {*{if !$configuration.taxes_enabled}
-            {assign var="precio_discount" value=$product.price_tax_exc}
-        {else}
+        {*      {if !$configuration.taxes_enabled}
+        {assign var="precio_discount" value=$product.price_tax_exc}
+    {else}
             {assign var="precio_discount" value=$product.regular_price_amount}
-        {/if}
-        {if $quantity_discount.reduction_type == 'percentage'}
-          {math assign="dto" equation="x + 1" x=$quantity_discount.reduction}
-          {math assign="unit_price" equation="x / y" x=$precio_discount y=$dto}
-        {else}
-          {math assign="unit_price" equation="x - y" x=$precio_discount y=$quantity_discount.reduction}
-        {/if}*}
+    {/if}
+    {if $quantity_discount.reduction_type == 'percentage'}
+      {math assign="dto" equation="1 - x" x=$quantity_discount.reduction}
+      {math assign="unit_price" equation="x * y" x=$precio_discount y=$dto}
+    {else}
+      {math assign="unit_price" equation="x - y" x=$precio_discount y=$quantity_discount.reduction}
+    {/if}*}
         <div class="pack_dto" data-qty="{$quantity_discount.quantity}">
           <span class="qty"><strong>{$quantity_discount.quantity} {l s='uds.' d='Shop.Theme.Catalog'}</strong></span>
 {*          <span class="price">{Tools::displayPrice($unit_price)}/{l s='unidad' d='Shop.Theme.Catalog'}</span>*}
