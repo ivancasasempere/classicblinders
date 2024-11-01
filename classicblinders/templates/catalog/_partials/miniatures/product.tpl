@@ -23,70 +23,67 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 {block name='product_miniature_item'}
-<div>
-  <article class="product-miniature js-product-miniature" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}">
-    <div class="thumbnail-container">
-      {block name='product_thumbnail'}
-          <a href="{$product.url}" class="thumbnail product-thumbnail {if count($product.images) > 1 && $custom_generic.second_img == true}multiple_img{/if}">
+  <div>
+    <article class="product-miniature js-product-miniature" data-id-product="{$product.id_product}"
+      data-id-product-attribute="{$product.id_product_attribute}">
+      <div class="thumbnail-container">
+        {block name='product_thumbnail'}
+          <a href="{$product.url}"
+            class="thumbnail product-thumbnail {if count($product.images) > 1 && $custom_generic.second_img == true}multiple_img{/if}">
 
             {if $product.cover}
-                <picture
-                {if count($product.images) > 1 && $custom_generic.second_img == true}
-                  class="first_img"
-              {/if}
-                >
-                  {if !empty($product.cover.bySize.home_default.sources.avif)}<source srcset="{$product.cover.bySize.home_default.sources.avif}" type="image/avif">{/if}
-                  {if !empty($product.cover.bySize.home_default.sources.webp)}<source srcset="{$product.cover.bySize.home_default.sources.webp}" type="image/webp">{/if}
-                  <img
-                    src="{$product.cover.bySize.home_default.url}"
-                    alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
-                    loading="lazy"
-                    data-full-size-image-url="{$product.cover.large.url}"
-                    width="{$product.cover.bySize.home_default.width}"
-                    height="{$product.cover.bySize.home_default.height}"
-                  />
-                </picture>
+              <picture {if count($product.images) > 1 && $custom_generic.second_img == true} class="first_img" {/if}>
+                {if !empty($product.cover.bySize.home_default.sources.avif)}
+                <source srcset="{$product.cover.bySize.home_default.sources.avif}" type="image/avif">{/if}
+                {if !empty($product.cover.bySize.home_default.sources.webp)}
+                <source srcset="{$product.cover.bySize.home_default.sources.webp}" type="image/webp">{/if}
+                <img src="{$product.cover.bySize.home_default.url}"
+                  alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
+                  loading="lazy" data-full-size-image-url="{$product.cover.large.url}"
+                  width="{$product.cover.bySize.home_default.width}" height="{$product.cover.bySize.home_default.height}" />
+              </picture>
 
 
               {if count($product.images) > 1 && $custom_generic.second_img == true}
                 <picture class="second_img">
-                  {if !empty($product.images.1.bySize.home_default.sources.avif)}<source srcset="{$product.images.1.bySize.home_default.sources.avif}" type="image/avif">{/if}
-                  {if !empty($product.images.1.bySize.home_default.sources.webp)}<source srcset="{$product.images.1.bySize.home_default.sources.webp}" type="image/webp">{/if}
-                  <img
-                    src="{$product.images.1.bySize.home_default.url}"
+                  {if !empty($product.images.1.bySize.home_default.sources.avif)}
+                  <source srcset="{$product.images.1.bySize.home_default.sources.avif}" type="image/avif">{/if}
+                  {if !empty($product.images.1.bySize.home_default.sources.webp)}
+                  <source srcset="{$product.images.1.bySize.home_default.sources.webp}" type="image/webp">{/if}
+                  <img src="{$product.images.1.bySize.home_default.url}"
                     alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
-                    loading="lazy"
-                    data-full-size-image-url="{$product.cover.large.url}"
+                    loading="lazy" data-full-size-image-url="{$product.cover.large.url}"
                     width="{$product.images.1.bySize.home_default.width}"
-                    height="{$product.images.1.bySize.home_default.height}"
-                  />
+                    height="{$product.images.1.bySize.home_default.height}" />
                 </picture>
-            {/if}
+              {/if}
             {else}
-                <picture>
-                  {if !empty($urls.no_picture_image.bySize.home_default.sources.avif)}<source srcset="{$urls.no_picture_image.bySize.home_default.sources.avif}" type="image/avif">{/if}
-                  {if !empty($urls.no_picture_image.bySize.home_default.sources.webp)}<source srcset="{$urls.no_picture_image.bySize.home_default.sources.webp}" type="image/webp">{/if}
-                  <img
-                    src="{$urls.no_picture_image.bySize.home_default.url}"
-                    loading="lazy"
-                    width="{$urls.no_picture_image.bySize.home_default.width}"
-                    height="{$urls.no_picture_image.bySize.home_default.height}"
-                  />
-                </picture>
+              <picture>
+                {if !empty($urls.no_picture_image.bySize.home_default.sources.avif)}
+                <source srcset="{$urls.no_picture_image.bySize.home_default.sources.avif}" type="image/avif">{/if}
+                {if !empty($urls.no_picture_image.bySize.home_default.sources.webp)}
+                <source srcset="{$urls.no_picture_image.bySize.home_default.sources.webp}" type="image/webp">{/if}
+                <img src="{$urls.no_picture_image.bySize.home_default.url}" loading="lazy"
+                  width="{$urls.no_picture_image.bySize.home_default.width}"
+                  height="{$urls.no_picture_image.bySize.home_default.height}" />
+              </picture>
             {/if}
           </a>
 
-          {block name='product_name'}
-            <a href="{$product.url}" class="h3 product-title">{$product.name}</a>
-          {/block}
-        </a>
-      {/block}
 
+        {/block}
+        {include file='catalog/_partials/product-flags.tpl'}
+
+      </div>
+
+      {block name='product_name'}
+        <a href="{$product.url}" class="h3 product-title">{$product.name}</a>
+      {/block}
       <div class="product-description">
 
-          {block name='product_reviews'}
-              {hook h='displayProductListReviews' product=$product}
-          {/block}
+        {block name='product_reviews'}
+          {hook h='displayProductListReviews' product=$product}
+        {/block}
 
         {block name='product_price_and_shipping'}
           {if $product.show_price}
@@ -98,8 +95,8 @@
                 <div class="prices_flex">
                   <span class="price" aria-label="{l s='Price' d='Shop.Theme.Catalog'}">{$product.price}</span>
                   <span class="regular-price" aria-label="{l s='Regular price' d='Shop.Theme.Catalog'}">
-                      <span>Antes</span>
-                      <span class="block-regular-price">{$product.regular_price}</span>
+                    <span>Antes</span>
+                    <span class="block-regular-price">{$product.regular_price}</span>
                   </span>
                 </div>
                 {if $product.discount_type === 'percentage'}
@@ -109,7 +106,7 @@
                 {/if}
 
               {else}
-                  <span class="price" aria-label="{l s='Price' d='Shop.Theme.Catalog'}">{$product.price}</span>
+                <span class="price" aria-label="{l s='Price' d='Shop.Theme.Catalog'}">{$product.price}</span>
               {/if}
 
               {hook h='displayProductPriceBlock' product=$product type="before_price"}
@@ -121,39 +118,31 @@
           {/if}
         {/block}
 
-          {if $custom_generic.button_buy == 1}
-              {if !$product.add_to_cart_url}
-                <div class="add">
-                  <button class="btn btn-primary add-to-cart-category datatext" datatext="{$product.url|base64_encode}">
-                      {l s='View more' d='Shop.Theme.Actions'}
-                  </button>
-                </div>
-              {else}
-                  <form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh">
-                      <input type="hidden" name="token" value="{$static_token}">
-                      <input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
-                      <input type="hidden" name="id_customization" value="0" id="product_customization_id">
-                      <div class="add">
-                          <button
-                                  class="btn btn-primary add-to-cart-category"
-                                  data-button-action="add-to-cart"
-                                  type="submit"
-                                  {if !$product.add_to_cart_url}
-                                      disabled
-                                  {/if}
-                          >
-                              {l s='Add to cart' d='Shop.Theme.Actions'}
-                          </button>
-                      </div>
-                  </form>
-              {/if}
+        {if $custom_generic.button_buy == 1}
+          {if !$product.add_to_cart_url}
+            <div class="add">
+              <button class="btn btn-primary add-to-cart-category datatext" datatext="{$product.url|base64_encode}">
+                {l s='View more' d='Shop.Theme.Actions'}
+              </button>
+            </div>
+          {else}
+            <form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh">
+              <input type="hidden" name="token" value="{$static_token}">
+              <input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
+              <input type="hidden" name="id_customization" value="0" id="product_customization_id">
+              <div class="add">
+                <button class="btn btn-primary add-to-cart-category" data-button-action="add-to-cart" type="submit"
+                  {if !$product.add_to_cart_url} disabled {/if}>
+                  {l s='Add to cart' d='Shop.Theme.Actions'}
+                </button>
+              </div>
+            </form>
           {/if}
+        {/if}
       </div>
 
-      {include file='catalog/_partials/product-flags.tpl'}
 
 
-    </div>
-  </article>
-</div>
+    </article>
+  </div>
 {/block}
