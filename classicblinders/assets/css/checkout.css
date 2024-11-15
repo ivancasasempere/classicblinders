@@ -24,7 +24,7 @@ body#checkout #header .header-nav .header_checkout {
 
 body#checkout #header .header-nav .header_checkout .logo {
   max-height: 49px;
-  width: auto;
+  width: 100%;
 }
 
 body#checkout #header .header-nav .header_checkout .text_contactinfo .hidden-md-down {
