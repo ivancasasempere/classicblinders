@@ -42,7 +42,9 @@ $(document).ready(function () {
             .then(function (resp) {
                 response(resp.products);
             })
-            .fail(response);
+            .fail(function (jqXHR) {
+                response([]);
+            });
         },
         select: function (event, ui) {
             var url = ui.item.url;
