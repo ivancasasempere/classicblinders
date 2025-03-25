@@ -98,6 +98,7 @@
           {hook h='displayProductPriceBlock' product=$product type="price"}
           {hook h='displayProductPriceBlock' product=$product type="after_price"}
 
+          {if ($product.additional_delivery_times == 1 && $product.delivery_information) || $product.additional_delivery_times == 2 || $product.availability_message}
           <div class="available_stock {$product.availability}">
             {block name='product_availability'}
                 <span id="product-availability">
@@ -126,6 +127,7 @@
                 {/if}
             {/if}
           </div>
+          {/if}
         </div>
 
       </div>

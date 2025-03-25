@@ -24,7 +24,7 @@
  *}
 
 <section class="featured-products clearfix mt-3">
-    <p class="h4">{l s='Productos relacionados' d='Shop.Theme.Catalog'}</p>
+    <p class="h1 products-section-title">{l s='Productos relacionados' d='Shop.Theme.Catalog'}</p>
     <div id="splide_crossselling" class="splide">
         <div class="splide__track">
             <div class="splide__list">

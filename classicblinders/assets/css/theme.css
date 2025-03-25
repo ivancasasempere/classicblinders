@@ -610,12 +610,16 @@ p {
   outline: 0;
 }
 
+#header .btn-secondary,
 .btn-secondary {
   color: var(--button_s_color);
   background-color: var(--button_s_bk);
   border-color: var(--button_s_border);
 }
 
+#header .btn-secondary.focus,
+#header .btn-secondary:focus,
+#header .btn-secondary:hover,
 .btn-secondary.focus,
 .btn-secondary:focus,
 .btn-secondary:hover {
@@ -624,15 +628,22 @@ p {
   border-color: var(--button_s_border_hover);
 }
 
-.btn-secondary.active,
-.btn-secondary:active,
-.btn-secondary.dropdown-toggle {
+#header .btn-secondary.active,
+#header .btn-secondary:active,
+#header .btn-secondary.dropdown-toggle,
+.btn-secondary.active .btn-secondary:active .btn-secondary.dropdown-toggle {
   color: var(--button_s_color_hover);
   background-color: var(--button_s_bk_hover);
   border-color: var(--button_s_border_hover);
   background-image: none;
 }
 
+#header .btn-secondary.active.focus,
+#header .btn-secondary.active:focus,
+#header .btn-secondary.active:hover,
+#header .btn-secondary:active.focus,
+#header .btn-secondary:active:focus,
+#header .btn-secondary:active:hover,
 .btn-secondary.active.focus,
 .btn-secondary.active:focus,
 .btn-secondary.active:hover,
@@ -3006,6 +3017,7 @@ table tbody td {
   #header .header-top .header__flex.mobile .mobile_middle .displayTopCenter {
     width: calc(100% - 40px);
     margin-left: 16px;
+    display: flex;
   }
 
   #header .header-top .header__flex.mobile .displayTop .icon_name {
@@ -3892,6 +3904,10 @@ table tbody td {
 
 /*** Responsive part ***/
 @media (max-width: 767px) {
+  .header-top #search_widget {
+    margin-bottom: 0;
+  }
+
   .header-top .search-widget {
     float: none;
   }
@@ -5569,4 +5585,8 @@ label .color,
 
 #subcategories ul li .subcategory-name:hover img {
   scale: 1.2;
+}
+
+#footer p.alert {
+  background: transparent;
 }
